@@ -12,7 +12,8 @@
   :root { --glass: rgba(255,255,255,.08); --glass-2: rgba(255,255,255,.14); --edge: rgba(255,255,255,.16);
           --fg:#fff; --mut:rgba(255,255,255,.62); --ok:#34c759; --bad:#ff453a; --acc:#0a84ff; }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; -webkit-user-select:none; user-select:none; }
-  html,body { margin:0; min-height:100%; background:#000; color:var(--fg);
+  html { background:#000; }
+  body { margin:0; min-height:100%; color:var(--fg);
               font:17px/1.35 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif; }
   .bg { position:fixed; inset:-40px; background:url(bg.jpg) center/cover; filter:blur(30px) saturate(1.4) brightness(.55); transform:scale(1.1); z-index:-1; }
   main { max-width:460px; margin:auto; padding:max(18px,env(safe-area-inset-top)) 18px 40px; }
