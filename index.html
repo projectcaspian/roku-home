@@ -157,7 +157,7 @@ async function play(url) {
   $('go').disabled = false;
 }
 $('go').onclick = () => play();
-$('url').onkeydown = e => e.key === 'Enter' && play();
+$('url').onkeydown = e => { if (e.key === 'Enter') play(); };
 $('paste').onclick = async () => {
   try { $('url').value = await navigator.clipboard.readText(); play(); }
   catch { $('url').focus(); say('Long-press the box and tap Paste'); }
